@@ -23,7 +23,7 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
     follow_redirect!
 
     assert_select 'h2', 'Your Pragmatic Cart'
-    assert_select 'li', 'Design and Build Great Web APIs'
+    assert_select 'li', '1 \u00D7 Design and Build Great Web APIs'
   end
 
   test "should show line_item" do
